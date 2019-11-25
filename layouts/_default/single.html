@@ -1,0 +1,16 @@
+{{ define "head" }}
+    <link rel="stylesheet" href="{{ absURL "css/single.css" }}">
+{{ end }}
+
+{{ define "header" }}
+<h1>{{.Title}}</h1>
+{{ end }}
+
+{{ define "main" }}
+<article>
+  {{ .Content }}
+  {{ partial "tags.html" . }}
+  {{ partial "comments.html" . }}
+</article>
+
+{{ end }}

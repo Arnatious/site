@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+    {{ partial "head.html" . }}
+    {{ block "head" . }}
+    {{ end }}
+</head>
+<body>
+    {{ partial "nav.html" . }}
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger visuallyhidden" />
+    <label for="nav-trigger"></label>
+
+    <div class="container">
+        <header>
+        {{ block "header" . }}
+            <h1>{{ $.Site.Title }}</h1>
+        {{ end }}
+        </header>
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partialCached "footer.html" . }}
+    </div>
+</body>
+</html>

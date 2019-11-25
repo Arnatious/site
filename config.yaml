@@ -1,0 +1,40 @@
+baseURL: "http://arnatious.com/"
+languageCode: "en-us"
+title: "Ted Kern"
+menu:
+  navmenu:
+  - identifier: home
+    name: Home
+    url: /
+    weight: -110
+  - identifier: about
+    name: About
+    url: /about
+    weight: -100
+  - identifier: blog
+    name: Blog
+    url: /blog
+    weight: -90
+  - identifier: contact
+    name: Contact
+    url: /contact
+    weight: -80
+module:
+module:
+  mounts:
+  - source: content
+    target: content
+  - source: icons
+    target: static
+  - source: static
+    target: static
+  - source: layouts
+    target: layouts
+  - source: data
+    target: data
+  - source: assets
+    target: assets
+  - source: i18n
+    target: i18n
+  - source: archetypes
+    target: archetypes

@@ -1,0 +1,13 @@
+{{ define "head" }}
+    <link rel="stylesheet" href="{{ absURL "css/index.css" }}">
+{{ end }}
+
+{{ define "header" }}
+    <h1>{{ $.Site.Title }}</h1>
+{{ end }}
+
+{{ define "main" }}
+<article>
+    {{ .Content }}
+</article>
+{{ end }}
