@@ -1,0 +1,96 @@
+main {
+    min-width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+main * {
+    margin: 0;
+}
+
+ol.bloglist {
+    display: flex;
+    margin: 0;
+    padding: 0 1em;
+    list-style-type: none;
+    min-width: 100%;
+    flex-flow: column;
+}
+
+.bloglist li {
+    display: flex;
+    align-items: baseline;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.bloglist li div {
+    justify-content: center;
+    flex: 1;
+}
+
+.bloglist .post-info {
+    justify-content: right;
+}
+
+.bloglist .date {
+    justify-content: left;
+}
+
+.bloglist .summary {
+    flex: 10;
+}
+
+.date {
+    display: inline-flex;
+    font-size: 10pt;
+    text-align: left;
+}
+
+.post-info {
+    text-align: right;
+    display: inline-flex;
+    flex: 0 1 auto;
+    flex-flow: row;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.post-info h2 {
+    font-size: 16pt;
+}
+
+a.post-title {
+    color: inherit;
+}
+
+.summary {
+    margin: 0 2em;
+    flex: 0 1 auto;
+    max-width: 30em;
+    display: inline;
+}
+
+.read-more {
+    display: inline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding: 1em 0;
+}
+
+.pagination li {
+    flex: 0 1 auto;
+    padding: 0 1em;
+}
+
+.page-item.active a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,13 +1,3 @@
-header {
-    text-align: center;
-    flex: 1 0 auto;
-}
-
-main {
-    padding: 0 2em;
-    max-width: 66ch;
-    text-align: center;
-    margin: auto;
-    font-size: 14pt;
-    flex: 1 0 auto;
+article {
+    max-width: 30em;
 }

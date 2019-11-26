@@ -3,9 +3,9 @@
         {{ $currentPage := . }}
 
         {{ range .Site.Menus.navmenu }}
-        <li class="nav-item{{ if or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }} active {{ end }}">
-            <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }} </a>
-        </li>
+            <li class="nav-item{{if or ($currentPage.IsMenuCurrent "nav" .) | or ($currentPage.HasMenuCurrent "nav" .) (eq $currentPage.RelPermalink .URL)}} active {{ end }}">
+                <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }} </a>
+            </li>
         {{end}}
     </ul>
 </nav>

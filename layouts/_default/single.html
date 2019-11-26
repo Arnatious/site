@@ -1,5 +1,6 @@
 {{ define "head" }}
-    <link rel="stylesheet" href="{{ "/css/single.css" }}">
+{{ with .Resources.ByType "image" }}
+{{ end }}
 {{ end }}
 
 {{ define "header" }}
@@ -12,5 +13,4 @@
   {{ partial "tags.html" . }}
   {{ partial "comments.html" . }}
 </article>
-
 {{ end }}

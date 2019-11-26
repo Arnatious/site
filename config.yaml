@@ -1,6 +1,7 @@
-baseURL: "http://arnatious.com/"
-languageCode: "en-us"
-title: "Ted Kern"
+baseURL: http://arnatious.com/
+languageCode: en-us
+title: Ted Kern
+pygmentsCodeFences: true
 menu:
   navmenu:
   - identifier: home
@@ -9,15 +10,15 @@ menu:
     weight: -110
   - identifier: about
     name: About
-    url: /about
+    url: /about/
     weight: -100
   - identifier: blog
     name: Blog
-    url: /blog
+    url: /blog/
     weight: -90
   - identifier: contact
     name: Contact
-    url: /contact
+    url: /contact/
     weight: -80
 module:
 module:
@@ -38,3 +39,6 @@ module:
     target: i18n
   - source: archetypes
     target: archetypes
+traceFlags: debug-shortcodes
+enableRobotsTXT: true
+summaryLength: 20

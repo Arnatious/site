@@ -1,5 +1,8 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap');
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -104,12 +107,17 @@ textarea {
 
 html {
     height: 100%;
+    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
+    text-align: center;
+    flex: 1 0 auto;
+    min-height: calc(30px + 2em);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header.h1 {
@@ -121,7 +129,7 @@ body {
     overflow-x: hidden;
 }
 
-footer {
+body footer {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -137,6 +145,8 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
     max-width: 100%;
+    font-size: 12pt;
+    color: gray;
     text-align: center;
 }
 
@@ -146,10 +156,19 @@ footer {
     flex-direction: column;
     justify-content: center;
     left: 0;
+    padding: 0 2em;
     min-height: 100%;
     min-width: 100%;
     position: relative;
     z-index: 1;
+}
+
+header~* {
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 14pt;
+    flex: 1 0 auto;
 }
 
 nav {
@@ -167,6 +186,7 @@ nav {
 }
 
 nav ul {
+    font-family: 'Open Sans', sans-serif;
     padding-left: 0;
     width: 150px;
 }
@@ -188,6 +208,11 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, .25);
+}
+
+.nav-item.active {
+    border: ridge;
+    border-color: rgba(255, 255, 255, .25);
 }
 
 label[for="nav-trigger"] {

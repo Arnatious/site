@@ -1,0 +1,22 @@
+{{ $name := .Get "name" }}
+{{ $match := printf "*%s*" $name }}
+{{ .Scratch.Set "img" (.Page.Resources.GetMatch $match) }}
+{{ with .Get "size" }}
+{{ $.Scratch.Set "img" (($.Scratch.Get "img").Resize .) }}
+{{ end }}
+
+{{ with .Get "href" }}
+<a href="{{ . }}" style="text-decoration: none;">
+{{ end }}
+<img
+class="img-fluid"
+src="{{ (.Scratch.Get "img").Permalink }}"
+{{ if (.Get "width") | and (.Get "height") }}
+style="width:{{ .Get "width" }}; height:{{ .Get "height" }}"
+{{ end }}
+{{ with .Get "alt" }}alt="{{ . }}"{{ end }}
+/>
+{{ with .Get "href" }}
+</a>
+{{ end }}
+

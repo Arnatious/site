@@ -1,1 +1,35 @@
-{{ .Content }}
+{{ define "head" }}
+<link rel="stylesheet" href="/css/list.css" crossorigin="anonymous">
+{{ end }}
+
+{{ define "header" }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+
+{{ define "main" }}
+
+<ol class="bloglist">
+{{ range .Paginator.Pages }}
+   <li>
+        <div class="post-info">
+            <span>
+                <a href="{{ .RelPermalink }}" class="post-title">
+                <h2>
+                    {{ .Title }}
+                </h2></a>
+            </span>
+        </div>
+
+        <div class="summary">{{ .Summary }}{{ if .Truncated }}
+        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+            <div class="read-more">
+                <a href="{{ .RelPermalink }}">Read&nbsp;More…</a>
+            </div>
+        {{ end }}</div>
+        <div class="date">
+        <span>{{ .Date.Format "02 Jan 06 15:04 MST" }}</span></div>
+    </li>
+{{ end }}
+</ol>
+{{ template "_internal/pagination.html" . }}
+{{ end }}

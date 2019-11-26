@@ -16,10 +16,6 @@
 {{ range (slice "normalize.css" "main.css") }}
 <link rel="stylesheet" href="{{ printf "/css/%s" . }}"  crossorigin="anonymous">{{ end }}
 
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
-</style>
-
 {{ block "loadshortcodes" . }}{{ with .Content }}{{ end }}{{ end }}
 {{ range .Scratch.GetSortedMapValues "js" }}
 <script defer src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
