@@ -216,7 +216,7 @@ nav a:hover {
 }
 
 label[for="nav-trigger"] {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='https://www.w3.org/2000/svg' xmlns:xlink='https://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
     background-size: contain;
     cursor: pointer;
     height: 2em;
@@ -358,7 +358,7 @@ label[for="nav-trigger"] {
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -368,7 +368,7 @@ label[for="nav-trigger"] {
         background: transparent !important;
         color: #000 !important;
         /* Black prints faster:
-                                   https://www.sanbeiji.com/archives/953 */
+                                   http://www.sanbeiji.com/archives/953 */
         -webkit-box-shadow: none !important;
                 box-shadow: none !important;
         text-shadow: none !important;
@@ -401,7 +401,7 @@ label[for="nav-trigger"] {
     }
     /*
      * Printing Tables:
-     * https://css-discuss.incutio.com/wiki/Printing_Tables
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
     thead {
         display: table-header-group;
