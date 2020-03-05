@@ -13,7 +13,7 @@
 
 <link rel="canonical" href="{{ .Permalink }}"/>
 
-{{ range (slice "normalize.css" "main.css") }}
+{{ range (slice "normalize.css" "main.css" ) }}
 <link rel="stylesheet" href="{{ printf "/css/%s" . }}"  crossorigin="anonymous">{{ end }}
 
 {{ block "loadshortcodes" . }}{{ with .Content }}{{ end }}{{ end }}

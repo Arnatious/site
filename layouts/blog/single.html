@@ -1,0 +1,18 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/single.css" crossorigin="anonymous">
+{{ end }}
+
+{{ define "main" }}
+
+<section id="main">
+    <h1 id="title">{{ .Title }}</h1>
+    <div>
+        <article id="content">
+            {{ .Content }}
+            {{ partial "tags.html" . }}
+            {{ partial "comments.html" . }}
+        </article>
+    </div>
+</section>
+
+{{ end }}

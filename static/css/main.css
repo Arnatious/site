@@ -14,7 +14,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -105,6 +105,14 @@ textarea {
             box-sizing: border-box;
 }
 
+html, body, input, textarea, select, button {
+    border-color: #575757;
+    color: #eeeeee;
+}
+a {
+    color: #3391ff;
+}
+
 html {
     height: 100%;
     /* font-family: 'Open Sans', sans-serif; */
@@ -146,12 +154,12 @@ body footer {
     margin-top: 10px;
     max-width: 100%;
     font-size: 12pt;
-    color: gray;
+    color: rgb(186, 181, 171);
     text-align: center;
 }
 
 .container {
-    background: #fff;
+    background: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +224,7 @@ nav a:hover {
 }
 
 label[for="nav-trigger"] {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><defs><style type='text/css'><![CDATA[rect { stroke: white; fill: white;}]]></style></defs><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
     background-size: contain;
     cursor: pointer;
     height: 2em;

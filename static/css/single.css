@@ -1,3 +1,23 @@
 article {
-    max-width: 30em;
+    display: flex;
+    flex-direction: column;
+    max-width: 100ch;
+    align-items: center;
+    text-align: left;
+}
+
+article p {
+    max-width: 72ch;
+}
+
+.highlight {
+    min-width: 100ch;
+}
+.highlight pre {
+    padding: 0 1em;
+}
+
+blockquote {
+    background-color: #222222;
+    padding: 0 1em;
 }
