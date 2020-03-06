@@ -1,6 +1,8 @@
 ---
 title: A Short Virtual Environment Primer
 date: 2020-03-05T08:31:39-08:00
+description: A small primer on virtual environments, a standard part of the python development toolkit.
+summary: A small primer on virtual environments, a standard part of the python development toolkit.
 ---
 
 Virtual envs create a lightweight copy of your current Python binary and a clean, separate site packages folder.
@@ -14,7 +16,7 @@ ubuntu@ubuntu:~/foo$ ls -al
 .  ..  my_env
 ```
 
-The my_env folder here contains a lightweight copy of your current python distribution, with only basic packages installed
+The `my_env` folder here contains a lightweight copy of your current python distribution, with only basic packages installed
 
 ```bash
 ubuntu@ubuntu:~/foo$ ls my_env

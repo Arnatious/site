@@ -171,12 +171,24 @@ body footer {
     z-index: 1;
 }
 
+.container section {
+    display: flex;
+    flex-direction: column;
+}
+
 header~* {
     padding: 0;
     text-align: center;
     margin: auto;
     font-size: 14pt;
     flex: 1 0 auto;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav {
@@ -350,7 +362,7 @@ label[for="nav-trigger"] {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 860px) {
     label[for="nav-trigger"] {
         position: fixed;
     }

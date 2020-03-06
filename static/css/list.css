@@ -3,6 +3,8 @@ main {
     display: flex;
     flex-flow: column;
     margin: 0;
+    flex: 1;
+    align-items: center;
 }
 
 main * {
@@ -14,14 +16,15 @@ ol.bloglist {
     margin: 0;
     padding: 0 1em;
     list-style-type: none;
-    min-width: 100%;
+    max-width: 100ch;
     flex-flow: column;
+    align-items: center;
 }
 
 .bloglist li {
     display: flex;
-    align-items: baseline;
-    flex-flow: row wrap;
+    align-items: center;
+    flex-flow: column;
     justify-content: center;
     margin: 1em 0;
 }
@@ -32,11 +35,11 @@ ol.bloglist {
 }
 
 .bloglist .post-info {
-    justify-content: right;
+    justify-content: left;
 }
 
 .bloglist .date {
-    justify-content: left;
+    justify-content: center;
 }
 
 .bloglist .summary {

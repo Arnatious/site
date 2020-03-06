@@ -20,12 +20,11 @@
             </span>
         </div>
 
-        <div class="summary">{{ .Summary }}{{ if .Truncated }}
-        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+        <div class="summary">{{ .Summary }}
             <div class="read-more">
                 <a href="{{ .RelPermalink }}">Read&nbsp;More…</a>
             </div>
-        {{ end }}</div>
+        </div>
         <div class="date">
         <span>{{ .Date.Format "02 Jan 06 15:04 MST" }}</span></div>
     </li>

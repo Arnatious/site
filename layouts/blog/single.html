@@ -6,13 +6,11 @@
 
 <section id="main">
     <h1 id="title">{{ .Title }}</h1>
-    <div>
-        <article id="content">
-            {{ .Content }}
-            {{ partial "tags.html" . }}
-            {{ partial "comments.html" . }}
-        </article>
-    </div>
+    <article id="content">
+        {{ .Content }}
+        {{ partial "tags.html" . }}
+        {{ partial "comments.html" . }}
+    </article>
 </section>
 
 {{ end }}

@@ -1,8 +1,8 @@
 article {
     display: flex;
     flex-direction: column;
-    max-width: 100ch;
     align-items: center;
+    flex: 1 0 auto;
     text-align: left;
 }
 
@@ -11,10 +11,14 @@ article p {
 }
 
 .highlight {
-    min-width: 100ch;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 .highlight pre {
-    padding: 0 1em;
+    display: block;
+    max-width: 100ch;
+    padding: .5em 1em;
+    overflow-x: scroll;
 }
 
 blockquote {
