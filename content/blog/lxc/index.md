@@ -1,7 +1,6 @@
 ---
 title: "ROS Development with LXD"
 date: 2020-03-05T13:03:02-08:00
-draft: true
 ---
 
 Linux containers allow for easy isolation of developer environments. If you're often working with a bunch of different ROS versions, it's a lot easier to do your work entirely in containers.
