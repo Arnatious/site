@@ -1,3 +1,7 @@
+header {
+    flex: none;
+}
+
 main {
     min-width: 100%;
     display: flex;
