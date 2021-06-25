@@ -13,4 +13,4 @@ Roboticist, tools programmer, robotics engineering advocate.
 
 Background in classical AI, planning and decision making, embedded systems, and human-robot interaction.
 
-Loves tabletop games, indie videogames, and birds.
+Loves tabletop RPGS, indie videogames, and birds.

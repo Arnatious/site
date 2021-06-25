@@ -5,10 +5,8 @@ title: Homepage
 
 I'm Ted.
 
-A roboticist, Linux dev, RPG enthusiast, and engineer at [Canonical](https://canonical.com/).
+A roboticist, Linux dev, RPG enthusiast, and engineer at [Nvidia](https://nvidia.com/).
 
-I work on professionally on [ROS 1 and 2](https://www.ros.org/).
+Currently in wonderful Portland, Oregon.
 
-Currently in the Bay Area.
-
-Catch me at [ROSCon](https://roscon.ros.org/), [IROS](https://www.iros2019.org/), and Gencon this year.
+Catch me at [ROSCon](https://roscon.ros.org/) and Gencon this year.
